@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+  }
+  
+  .octagon-container {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .octagon {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+    clip-path: polygon(29% 0%, 71% 0%, 100% 29%, 100% 71%, 71% 100%, 29% 100%, 0% 71%, 0% 29%);
+  }
+  
+  .octagon1 {
+    top: 20%;
+    left: 20%;
+  }
+  
+  .octagon2 {
+    top: 20%;
+    right: 20%;
+  }
+  
+  .octagon3 {
+    bottom: 20%;
+    left: 20%;
+  }
+  
+  .octagon4 {
+    bottom: 20%;
+    right: 20%;
+  }
+  
+  .octagon-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: linear-gradient(135deg, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .octagon:hover .octagon-hover {
+    opacity: 1;
+  }
+  
+  @keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
