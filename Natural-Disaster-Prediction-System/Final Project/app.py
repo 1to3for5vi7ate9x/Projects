@@ -4,6 +4,7 @@ import numpy as np
 import pandas as pd
 
 
+
 app = Flask(__name__)
 
 # Load the trained model
@@ -47,7 +48,6 @@ def index():
                 else:
                     heavy_rainfall_prediction = "No"
     return render_template('index.html', earthquake_prediction=earthquake_prediction, flood_prediction=flood_prediction, heavy_rainfall_prediction=heavy_rainfall_prediction)
-
 if __name__ == '__main__':
     app.run(debug=True)
 

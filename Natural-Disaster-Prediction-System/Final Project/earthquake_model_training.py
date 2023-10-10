@@ -5,7 +5,7 @@ import pickle
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
-
+import matplotlib.pyplot as plt
 
 
 # Load the dataset for earthquake
@@ -35,4 +35,19 @@ with open(model_filename, 'wb') as file:
     pickle.dump(model, file)
 
 model_filename
+
+# with open('earthquake_model.pkl', 'rb') as file:
+#     model = pickle.load(file)
+
+# # Assuming X_test and y_test are available
+# y_pred = model.predict(X_test)
+
+# # Create a scatter plot
+# plt.figure(figsize=(8, 6))
+# plt.scatter(y_test, y_pred, color='blue', alpha=0.7)
+# plt.xlabel('Actual Magnitudes')
+# plt.ylabel('Predicted Magnitudes')
+# plt.title('Actual vs. Predicted Earthquake Magnitudes')
+# plt.grid(True)
+# plt.show()
 

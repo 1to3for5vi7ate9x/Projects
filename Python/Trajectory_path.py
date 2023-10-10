@@ -20,14 +20,15 @@ positions = []
 for i in range(time_steps):
     # Calculate time elapsed since launch
     t = i * step_size
+    #tr = round(t,2)
 
     # Calculate horizontal and vertical positions
     x = x0 + velocity * math.cos(angle) * t
     y = y0 + velocity * math.sin(angle) * t - 0.5 * g * t**2
-
+    #xr = "{:.2f}".format(x)
+    #yr = "{:.2f}".format(y)
     # Add position to list
     positions.append((x, y))
-
 # Print list of positions
 print(positions)
 

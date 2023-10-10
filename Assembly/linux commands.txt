@@ -1,0 +1,47 @@
+Certainly, Ankit! Here are 20 useful Linux commands along with brief descriptions for each:
+
+1. `pwd` - Stands for "Print Working Directory." It displays the current directory/path.
+
+2. `ls` - Lists files and directories in the current directory.
+
+3. `cd` - Stands for "Change Directory." It's used to navigate to a different directory.
+
+4. `mkdir` - Stands for "Make Directory." Creates a new directory.
+
+5. `rmdir` - Stands for "Remove Directory." Deletes an empty directory.
+
+6. `cp` - Stands for "Copy." It copies files or directories from one location to another.
+
+7. `mv` - Stands for "Move." It moves/renames files and directories.
+
+8. `rm` - Stands for "Remove." Deletes files or directories. Be cautious, as it's irreversible.
+
+9. `cat` - Concatenates and displays the content of files.
+
+10. `grep` - Searches for patterns within files. Extremely powerful when combined with regular expressions.
+
+11. `chmod` - Stands for "Change Mode." It changes the permissions of files or directories.
+
+12. `chown` - Stands for "Change Owner." It changes the owner of files or directories.
+
+13. `ps` - Displays the currently running processes.
+
+14. `kill` - Sends a signal to a process, typically used to terminate a running program.
+
+15. `top` - Provides a dynamic, real-time view of the processes running on a system.
+
+16. `df` - Stands for "Disk Free." It shows the amount of disk space used and available on your file systems.
+
+17. `du` - Stands for "Disk Usage." It displays the disk usage of files and directories.
+
+18. `tar` - Used for archiving files. It can also compress the archived files using options like gzip or bzip2.
+
+19. `wget` - Downloads files from the web using a URL.
+
+20. `ssh` - Stands for "Secure Shell." It provides encrypted communication sessions over a computer network.
+
+21.The `echo` command is used to print the specified text or string to the standard output (usually the terminal)
+
+18.The ping command is used to check the status of your connection with a server.
+
+These commands form the basics of navigating, managing files, and working with processes in a Linux environment. Understanding and mastering these will give you a strong foundation for using Linux effectively.

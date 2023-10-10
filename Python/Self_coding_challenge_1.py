@@ -1,4 +1,4 @@
-# Locked Treasure Chest Solution
+# Coding_challenge_1 Locked chest with the name as secret word 
 
 def locked_treasure_chest_solution(int_list, secret_word):
     """

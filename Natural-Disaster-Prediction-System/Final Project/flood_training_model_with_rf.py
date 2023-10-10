@@ -4,6 +4,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 import pickle
+import matplotlib.pyplot as plt
 
 # Load the rainfall dataset again
 rainfall_df = pd.read_csv('rainfall_improved_dataset.csv')
@@ -68,7 +69,39 @@ with open(model_filename, 'wb') as file:
 
 model_filename
 
+# cm = confusion_matrix(y_test_rain, y_pred_rain)
+# sns.heatmap(cm, annot=True, fmt='g')
+# plt.xlabel('Predicted Labels')
+# plt.ylabel('True Labels')
+# plt.title('Confusion Matrix')
+# plt.show()
 
+# y_pred_proba = flood_model.predict_proba(X_test_rain)[:,1]
+# fpr, tpr, thresholds = roc_curve(y_test_rain, y_pred_proba)
+# plt.figure(figsize=(8, 6))
+# plt.plot(fpr, tpr, label='ROC Curve')
+# plt.xlabel('False Positive Rate')
+# plt.ylabel('True Positive Rate')
+# plt.title('ROC Curve')
+# plt.legend()
+# plt.show()
 
+# feature_importance = pd.Series(flood_model.feature_importances_, index=X_train_rain.columns)
+# feature_importance.nlargest(12).plot(kind='barh')
+# plt.xlabel('Rainfall in cms')
+# plt.ylabel('Months')
+# plt.title('Rainfall thresold')
+# plt.show()
+
+# plt.figure(figsize=(10, 6))
+# for month in X_test_rain.columns:
+#     plt.scatter(X_test_rain[month], y_test_rain, label='Actual', alpha=0.5)
+#     plt.scatter(X_test_rain[month][y_pred_rain == 1], y_test_rain[y_pred_rain == 1], label='Predicted Flood Risk', color='red', alpha=0.7)
+#     plt.axhline(y=monthly_thresholds[month], color='orange', linestyle='--', label=f'90th Percentile for {month}')
+#     plt.xlabel(f'{month} Rainfall (mm)')
+#     plt.ylabel('Flood Risk')
+#     plt.title(f'Flood Risk Prediction vs. {month} Rainfall')
+#     plt.legend()
+#     plt.show()
 
 
