@@ -1,4 +1,3 @@
-Certainly, Ankit! Here are 20 useful Linux commands along with brief descriptions for each:
 
 1. `pwd` - Stands for "Print Working Directory." It displays the current directory/path.
 
