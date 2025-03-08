@@ -1,0 +1,105 @@
+# OS generated files #
+######################
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+Icon?
+
+# IDE directories #
+###################
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Node.js dependencies #
+########################
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Python dependencies #
+#######################
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.eggs/
+.env
+.venv
+env/
+venv/
+ENV/
+*.log
+
+# Java dependencies #
+#####################
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+
+# Mac OS files #
+################
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# Logs and databases #
+######################
+*.log
+*.sqlite
+*.db
+*.mdb
+
+# Compiled binaries #
+#####################
+*.exe
+*.dll
+*.so
+*.dylib
+*.o
+*.out
+*.a
+
+# Temporary files #
+###################
+*.swp
+*.swo
+*~
+*.tmp
+
+# Environment variables #
+#########################
+.env*
+*.local
+
+# Misc #
+########
+coverage/
+*.bak
+*.orig
+*.rej
+*.patch
+*.diff
+
+# Docker #
+##########
+*.dockerignore
+Dockerfile.*
+docker-compose.override.yml
+docker-compose.*.yml
+
+# Git #
+#######
+*.orig
+MERGE_MSG
+COMMIT_EDITMSG
+/Python/downloads
+/Python/initially
